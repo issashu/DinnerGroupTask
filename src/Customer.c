@@ -5,6 +5,8 @@
 #define MAX_ORDERS 2
 #define MAX_ORDER_ID 10
 
+/*UNFINISHED. FINISH SO IT WORKS*/
+
 struct customer {
     int nr_orders;
     int menuIDs;

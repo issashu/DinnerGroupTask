@@ -1,7 +1,3 @@
-//
-// Created by Issashu Greybeard on 21.06.22.
-//
-
 #ifndef GROUP_TASK1_DISH_H
 #define GROUP_TASK1_DISH_H
 
@@ -25,6 +21,5 @@ int getNumberIngredients(Dish *Dish);
 float getDishPrice(Dish *Dish);
 int getMenuID(Dish *Dish);
 string* getIngredientsList(Dish *Dish);
-
 
 #endif //GROUP_TASK1_DISH_H

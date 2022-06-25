@@ -1,9 +1,8 @@
-//
-// Created by Issashu Greybeard on 21.06.22.
-//
 #include "Dish.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/*UNFINISHED. FINISH SO IT WORKS*/
 
 /**
  * Used to define a dish within the restaurant OS. Contains menu ID, dish Price, number of ingredients needed,
@@ -154,9 +153,7 @@ int getMenuID(Dish *Dish){
  * @return Returns the ingredients of the Dish
  */
 string* getIngredientsList(Dish *Dish){
-
     return Dish->ingerdientsList;
-
 }
 
 

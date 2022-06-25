@@ -1,12 +1,13 @@
 #include "restaurant.h"
 #include "defines.h"
-#include <stdio.h>
 
-#include "Dish.h"
-#include "Kitchen.h"
-#include "Customer.h"
+/*UNFINISHED. FINISH SO IT WORKS*/
 
 short openForBusiness(void){
-
+    static int i=0;
+    for(;i<MAX_ROUNDS;){
+        i++;
+        return TRUE;
+    }
     return FALSE;
 }
