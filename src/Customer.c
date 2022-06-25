@@ -1,9 +1,8 @@
 #include "Customer.h"
+#include "defines.h"
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_ORDERS 2
-#define MAX_ORDER_ID 10
 
 /*UNFINISHED. FINISH SO IT WORKS*/
 
