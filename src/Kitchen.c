@@ -1,11 +1,10 @@
-//
-// Created by Issashu Greybeard on 22.06.22.
-//
-
 #include "Kitchen.h"
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
+
+#define MAX_DISH_COUNT 6
 
 /*UNFINISHED. FINISH SO IT WORKS*/
 
@@ -27,14 +26,15 @@ static Chef *chef = NULL;
  * @param Name - Name of the newly hired Chef
  * @param maxDishes - How many dishes can he cook at once
  */
-void hireChef(string Name, int maxDishes){
+void hireChef(char *Name) {
+    srand(time(0));
     if (chef == NULL){
         chef = (Chef*) malloc(sizeof(struct cook));
         chef->isCooking = FALSE;
-        chef->maxDishes = maxDishes;
+        chef->maxDishes = rand() % MAX_DISH_COUNT + 1;
         chef->ChefName = Name;
 
-        for(int i=0; i<maxDishes; i++){
+        for(int i=0; i<chef->maxDishes; i++){
             chef->DishesCooked[i] = (Dish*) malloc (sizeof(Dish*));
         }
     }

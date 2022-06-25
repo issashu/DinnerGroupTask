@@ -10,7 +10,7 @@
 
 typedef struct cook Chef;
 
-void hireChef(string Name, int maxDishes);
+void hireChef(char *Name);
 Chef* callChef(void);
 void takeOrder(Dish* Dish);
 int cookingTimer(void);
