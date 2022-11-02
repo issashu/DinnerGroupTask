@@ -15,11 +15,11 @@ void addToMenu(Dish **Dish, int menuID);
 
 void printIngredients(Dish* Dish);
 
-int getDishTimer(Dish *Dish);
-string getDishName(Dish *Dish);
-int getNumberIngredients(Dish *Dish);
-float getDishPrice(Dish *Dish);
-int getMenuID(Dish *Dish);
-string* getIngredientsList(Dish *Dish);
+int getDishTimer(const Dish *Dish);
+string getDishName(const Dish *Dish);
+int getNumberIngredients(const Dish *Dish);
+float getDishPrice(const Dish *Dish);
+int getMenuID(const Dish *Dish);
+string* getIngredientsList(const Dish *Dish);
 
 #endif //GROUP_TASK1_DISH_H

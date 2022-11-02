@@ -107,7 +107,7 @@ void addToMenu(Dish **Dish, int menuID){
  * @param Dish - A pointer to a Dish
  * @return Returns the cooking timer
  */
-int getDishTimer(Dish *Dish){
+int getDishTimer(const Dish *Dish){
     return Dish->cookingTime;
 }
 
@@ -116,7 +116,7 @@ int getDishTimer(Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the Dish Name
  */
-string getDishName(Dish *Dish){
+string getDishName(const Dish *Dish){
     return Dish->dishName;
 }
 
@@ -125,7 +125,7 @@ string getDishName(Dish *Dish){
  * @param Dish - A pointer to a DIsh
  * @return Returns the total number of ingredients needed
  */
-int getNumberIngredients(Dish *Dish){
+int getNumberIngredients(const Dish *Dish){
     return Dish->numIngredients;
 }
 
@@ -134,7 +134,7 @@ int getNumberIngredients(Dish *Dish){
  * @param Dish - A pointer tp a Dish
  * @return Returns the Dish Price
  */
-float getDishPrice(Dish *Dish){
+float getDishPrice(const Dish *Dish){
     return Dish->dishPrice;
 }
 
@@ -143,7 +143,7 @@ float getDishPrice(Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the menu number of the Dish as an integer
  */
-int getMenuID(Dish *Dish){
+int getMenuID(const Dish *Dish){
     return Dish->menuID;
 }
 
@@ -152,7 +152,7 @@ int getMenuID(Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the ingredients of the Dish
  */
-string* getIngredientsList(Dish *Dish){
+string* getIngredientsList(const Dish *Dish){
     return Dish->ingerdientsList;
 }
 
