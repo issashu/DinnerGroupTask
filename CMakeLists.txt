@@ -41,8 +41,7 @@ target_include_directories (
         ${SOURCES_DIR}
 )
 
-#[[
-target_compile_options(
+#[[target_compile_options(
         ${PROJECT_NAME}
 
         PUBLIC

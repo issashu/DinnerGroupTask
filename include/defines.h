@@ -12,6 +12,7 @@
 #define MAX_ORDERS 2
 #define MAX_ORDER_ID 12
 #define MAX_CUSTOMERS 10
+#define MAX_ROUNDS_WAIT 2
 
 typedef enum CustomerStatus{
     NO_STATUS = 0,

@@ -20,3 +20,6 @@ Customer* newCustomer(void) {
     return tmpCustomer;
 }
 
+
+//Add logic for customer leaving angry after MAX_ROUNDS_WAIT
+
