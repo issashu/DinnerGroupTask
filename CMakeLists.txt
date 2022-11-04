@@ -2,13 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 
 project(DinnerDashC LANGUAGES C)
 
-#Remove/Comment before final build or before using Valgrind (CLion specific sanitizer options)
-#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address -fsanitize-address-use-after-scope  -fno-omit-frame-pointer -g")
-#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=memory -fPIE -pie -fno-omit-frame-pointer -g")
-
-#Uncomment below line in order to run the Clion profiler:
-#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
-
 #Set directories below
 set(BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(HEADERS_DIR ${BASE_DIR}/include)
