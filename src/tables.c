@@ -5,6 +5,6 @@
 /**
  * Struct to hold info regarding each table and its orders.
  */
-struct table{
+struct table {
 
 };

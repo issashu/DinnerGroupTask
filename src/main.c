@@ -4,7 +4,7 @@
 int main() {
     short business = TRUE;
 
-    while (business){
+    while (business) {
         business = openForBusiness();
     }
 

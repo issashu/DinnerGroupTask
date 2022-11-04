@@ -12,15 +12,14 @@
 #define MAX_ORDERS 2
 #define MAX_ORDER_ID 12
 #define MAX_CUSTOMERS 10
-#define MAX_ROUNDS_WAIT 2
 
-typedef enum CustomerStatus{
+typedef enum CustomerStatus {
     NO_STATUS = 0,
     WAITING_IN_QUEUE,
     SEATED,
     ORDERED,
     WELL_FED,
     LEAVING
-}CustomerStatus;
+} CustomerStatus;
 
 #endif //GROUP_TASK1_DEFINES_H

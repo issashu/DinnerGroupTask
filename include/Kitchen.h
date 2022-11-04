@@ -7,8 +7,11 @@
 typedef struct cook Chef;
 
 void hireChef(char *Name);
-Chef* callChef(void);
-void takeOrder(Dish* Dish);
+
+Chef *callChef(void);
+
+void takeOrder(Dish *Dish);
+
 int cookingTimer(void);
 
 #endif //GROUP_TASK1_KITCHEN_H

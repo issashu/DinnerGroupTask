@@ -14,15 +14,15 @@ struct dish {
     int cookingTime;
     float dishPrice;
     string dishName;
-    string *ingerdientsList;
+    string* ingerdientsList;
 };
 
 /**
  * Creates a new dish with a predefined amount of ingredients.
  * @return A pointer to a dish stored in the memory.
  */
-Dish* newDish(void){
-    struct dish *tmpDish = (struct dish *) malloc (sizeof (struct dish));
+Dish *newDish(void) {
+    struct dish *tmpDish = (struct dish *) malloc(sizeof(struct dish));
     tmpDish->dishName = NULL;
     tmpDish->dishPrice = 0;
     tmpDish->numIngredients = 0;
@@ -37,7 +37,7 @@ Dish* newDish(void){
 * @param Dish - the dish that needs to be updated
 * @param Name  - the Name for the new dish
 */
-void setDishName(Dish **Dish, string Name){
+void setDishName(Dish **Dish, string Name) {
     (*Dish)->dishName = Name;
 }
 
@@ -46,7 +46,7 @@ void setDishName(Dish **Dish, string Name){
  * @param Dish - the dish that needs to be updated
  * @param Price - the PRice of the new dish
  */
-void setDishPrice(Dish **Dish, float Price){
+void setDishPrice(Dish **Dish, float Price) {
     (*Dish)->dishPrice = Price;
 }
 
@@ -55,7 +55,7 @@ void setDishPrice(Dish **Dish, float Price){
  * @param Dish - the dish that needs to be updated
  * @param Ingredients - the total amount of ingredients
  */
-void setNumIngredients(Dish **Dish, int Ingredients){
+void setNumIngredients(Dish **Dish, int Ingredients) {
     (*Dish)->numIngredients = Ingredients;
 }
 
@@ -64,11 +64,11 @@ void setNumIngredients(Dish **Dish, int Ingredients){
  * @param Dish - the dish that needs to be updated
  * @param Ingredients - the list of ingredients needed
  */
-void setNeededIngredients(Dish **Dish, string Ingredients[]){
+void setNeededIngredients(Dish **Dish, string Ingredients[]) {
     int tmpIngredientsCount = (*Dish)->numIngredients;
     (*Dish)->ingerdientsList = (string*) malloc(tmpIngredientsCount * sizeof(string));
-    for(int i = 0; i<tmpIngredientsCount; i++){
-        (*Dish)->ingerdientsList[i] =(string)malloc(sizeof(string));
+    for (int i = 0; i < tmpIngredientsCount; i++) {
+        (*Dish)->ingerdientsList[i] = (string) malloc(sizeof(string));
         (*Dish)->ingerdientsList[i] = Ingredients[i];
     }
 }
@@ -77,8 +77,8 @@ void setNeededIngredients(Dish **Dish, string Ingredients[]){
  * Prints the ingredients of a given dish
  * @param Dish - Pointer to the Dish
  */
-void printIngredients(Dish* Dish){
-    for(int i = 0; i<Dish->numIngredients; i++){
+void printIngredients(Dish *Dish) {
+    for (int i = 0; i < Dish->numIngredients; i++) {
         fputs(Dish->ingerdientsList[i], stdout);
         fputs("\n", stdout);
     }
@@ -89,7 +89,7 @@ void printIngredients(Dish* Dish){
  * @param Dish - the dish that needs to be updated
  * @param Time - the Time needed to cook the dish
  */
-void setCookingTime(Dish **Dish, int Time){
+void setCookingTime(Dish **Dish, int Time) {
     (*Dish)->cookingTime = Time;
 }
 
@@ -98,7 +98,7 @@ void setCookingTime(Dish **Dish, int Time){
  * @param Dish - the dish that needs to be updated
  * @param menuID - the number in the menu for the dish
  */
-void addToMenu(Dish **Dish, int menuID){
+void addToMenu(Dish **Dish, int menuID) {
     (*Dish)->menuID = menuID;
 }
 
@@ -107,7 +107,7 @@ void addToMenu(Dish **Dish, int menuID){
  * @param Dish - A pointer to a Dish
  * @return Returns the cooking timer
  */
-int getDishTimer(const Dish *Dish){
+int getDishTimer(const Dish *Dish) {
     return Dish->cookingTime;
 }
 
@@ -116,7 +116,7 @@ int getDishTimer(const Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the Dish Name
  */
-string getDishName(const Dish *Dish){
+string getDishName(const Dish *Dish) {
     return Dish->dishName;
 }
 
@@ -125,7 +125,7 @@ string getDishName(const Dish *Dish){
  * @param Dish - A pointer to a DIsh
  * @return Returns the total number of ingredients needed
  */
-int getNumberIngredients(const Dish *Dish){
+int getNumberIngredients(const Dish *Dish) {
     return Dish->numIngredients;
 }
 
@@ -134,7 +134,7 @@ int getNumberIngredients(const Dish *Dish){
  * @param Dish - A pointer tp a Dish
  * @return Returns the Dish Price
  */
-float getDishPrice(const Dish *Dish){
+float getDishPrice(const Dish *Dish) {
     return Dish->dishPrice;
 }
 
@@ -143,7 +143,7 @@ float getDishPrice(const Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the menu number of the Dish as an integer
  */
-int getMenuID(const Dish *Dish){
+int getMenuID(const Dish *Dish) {
     return Dish->menuID;
 }
 
@@ -152,7 +152,7 @@ int getMenuID(const Dish *Dish){
  * @param Dish - A pointer to a Dish
  * @return Returns the ingredients of the Dish
  */
-string* getIngredientsList(const Dish *Dish){
+string*getIngredientsList(const Dish *Dish) {
     return Dish->ingerdientsList;
 }
 
